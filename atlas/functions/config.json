@@ -1,0 +1,14 @@
+[
+    {
+        "name": "CreateTest",
+        "private": false,
+        "run_as_system": true,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "GetTestData",
+        "private": false,
+        "run_as_system": true,
+        "disable_arg_logs": true
+    }
+]
