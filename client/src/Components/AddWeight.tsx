@@ -17,7 +17,7 @@ const AddWeight: React.FC = () => {
 
     try{
       const bodyObj = {
-        timestamp: new Date().toISOString(),
+        timestamp: new Date(),
         data:{
           weight,
           isMetric
