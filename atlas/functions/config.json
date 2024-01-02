@@ -2,13 +2,13 @@
     {
         "name": "AddWeight",
         "private": false,
-        "run_as_system": true
+        "run_as_system": true,
+        "disable_arg_logs": true
     },
     {
         "name": "CreateTest",
         "private": false,
-        "run_as_system": true,
-        "disable_arg_logs": true
+        "run_as_system": true
     },
     {
         "name": "GetTestData",
