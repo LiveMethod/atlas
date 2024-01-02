@@ -2,7 +2,7 @@ exports = function({ query, headers, body}, response) {
 
   const restoreDynamicDate = (obj) => {
     console.log(JSON.stringify(obj, null, 2));
-    obj['timestamp'] = Date.parse(obj['obj']);
+    obj['timestamp'] = Date.parse(obj['timestamp']);
     console.log(JSON.stringify(obj, null, 2));
     return obj;
   }
