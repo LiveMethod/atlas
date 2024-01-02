@@ -18,10 +18,8 @@ const AddWeight: React.FC = () => {
     try{
       const bodyObj = {
         timestamp: new Date(),
-        data:{
-          weight,
-          isMetric
-        }
+        weight,
+        isMetric
       };
       
       const response = await fetch(endpoint, {
