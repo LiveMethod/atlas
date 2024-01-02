@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 const AddWeight: React.FC = () => {
-  const endpoint = "Xxx";
+  const endpoint = "https://us-west-2.aws.data.mongodb-api.com/app/application-0-luhes/endpoint/scale/add";
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isSuccess, setIsSuccess] = useState<boolean | null>(null);
   const [weight, setWeight] = useState<number>(0);
