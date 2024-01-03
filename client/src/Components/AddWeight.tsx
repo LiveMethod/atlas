@@ -1,6 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
+import { AppContext } from '../App';
 
 const AddWeight: React.FC = () => {
+  const {appState, setAppState, fetchLatest} = useContext(AppContext);
   const endpoint = "https://us-west-2.aws.data.mongodb-api.com/app/application-0-luhes/endpoint/scale/add";
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isSuccess, setIsSuccess] = useState<boolean | null>(null);
@@ -35,6 +37,7 @@ const AddWeight: React.FC = () => {
       setIsSuccess(false);
     } finally {
       setIsLoading(false);
+      fetchLatest();
     }
   }
 
@@ -59,7 +62,5 @@ const AddWeight: React.FC = () => {
     </div>
   )
 };
-
-// Date().toISOString()
 
 export default AddWeight
